@@ -1,13 +1,14 @@
 import Web3 from 'web3';
 
 const web3 = new Web3(Web3.givenProvider);
+const networkId = 97;
 
 export const connectWallet = async () => {
     if (window.ethereum) {
       //switch if not connect to required network
       const chainId = await web3.eth.getChainId();
       console.log("chain id is "+chainId); 
-      if(chainId!=97){
+      if(chainId!=networkId){
         //add in try block to handle if network to switch doesn't exist
         await window.ethereum.request({
           method: 'wallet_switchEthereumChain',
