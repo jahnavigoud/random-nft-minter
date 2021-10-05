@@ -1,6 +1,6 @@
 # Getting Started 
 
-Install metamask to mint random NFTs.
+Random NFT Minter mints random nfts.
 
 ## Available Scripts
 
