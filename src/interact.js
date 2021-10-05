@@ -1,3 +1,7 @@
+import Web3 from 'web3';
+
+const web3 = new Web3(Web3.givenProvider);
+
 export const connectWallet = async () => {
     if (window.ethereum) {
       //switch if not connect to required network
